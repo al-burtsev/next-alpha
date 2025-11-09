@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useStore } from '@/src/stores/product-store';
+import { ProductDetailsClientProps } from '@/src/interfaces'
 
 
-const ProductDetailsClient = ({ productId }) => {
+const ProductDetailsClient = ({ productId }: ProductDetailsClientProps) => {
   const { products } = useStore();
   const numericId = Number(productId);
   const character = products.find(p => p.id === numericId);

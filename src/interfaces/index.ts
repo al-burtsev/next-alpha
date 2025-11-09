@@ -28,3 +28,10 @@ export interface StoreState {
     addProduct: (formData: Character) => void;
     removeProduct: (id: number) => void;
 }
+
+export interface ProductItemProps {
+    character: Character;
+}
+export interface ProductDetailsClientProps {
+    productId: string;
+}

@@ -4,11 +4,7 @@ import Image from 'next/image'
 import Like from '../Like/Like'
 import Delete from '../Delete/Delete'
 import { useStore } from '@/src/stores/product-store';
-import { Character } from '@/src/interfaces';
-
-interface ProductItemProps {
-    character: Character;
-}
+import { ProductItemProps } from '@/src/interfaces';
 
 const ProductItem = ({ character }: ProductItemProps ) => {
     const { toggleLike, removeProduct, favorites } = useStore();
