@@ -40,3 +40,8 @@ export interface LikeProps {
     height: number;
     isLiked: boolean;
 }
+
+export interface DeleteProps {
+    width: number;
+    height: number;
+}
