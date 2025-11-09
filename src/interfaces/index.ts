@@ -35,3 +35,8 @@ export interface ProductItemProps {
 export interface ProductDetailsClientProps {
     productId: string;
 }
+export interface LikeProps {
+    width: number;
+    height: number;
+    isLiked: boolean;
+}

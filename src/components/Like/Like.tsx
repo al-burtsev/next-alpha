@@ -1,4 +1,6 @@
-const Like = ({ width, height, isLiked }) => {
+import { LikeProps } from '@/src/interfaces';
+
+const Like = ({ width, height, isLiked }: LikeProps) => {
     const fillColor = isLiked ? 'red' : '#282828';
     return (
         <>
