@@ -4,7 +4,7 @@ import { Character } from '@/src/interfaces';
 
 export async function generateStaticParams() {
   const products = await getData('https://rickandmortyapi.com/api/character');
-  return products.map((product: Character) => ({
+  return products.results.map((product: Character) => ({
     id: product.id.toString(),
   }));
 }
