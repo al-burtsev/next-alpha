@@ -1,4 +1,4 @@
-import { getData } from '@/public/api/api';
+import { getData } from '@/src/api/api';
 import ProductDetailsClient from './ProductDetailsClient';
 import { Character } from '@/src/interfaces';
 
