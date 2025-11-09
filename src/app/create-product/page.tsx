@@ -36,8 +36,8 @@ const CreateProduct = () => {
   };
 
   return (
-    <section>
-      <Link href={'/'} className='inline-block p-10 pb-0 mb-10 text-xl'> ← Back to home</Link>
+    <section className='container mx-auto p-10'>
+      <Link href={'/'} className='inline-block py-10 pb-0 mb-10 text-xl'> ← Back to home</Link>
       <div className='container mx-auto py-10'>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-5 w-1/2 mb-5">
@@ -90,7 +90,7 @@ const CreateProduct = () => {
           </button>
         </form>
       </div>
-      <Link href={'/products'} className='inline-block p-10 pb-0 mb-10 text-xl'> ← Back to characters</Link>
+      <Link href={'/products'} className='inline-block py-10 pb-0 mb-10 text-xl'> ← Back to characters</Link>
     </section>
   );
 }

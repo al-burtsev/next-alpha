@@ -24,7 +24,7 @@ const ProductList = () => {
           onClick={() => setFilter('liked')}>Избранное</button>
       </div>
       <ul className='grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8'>
-        {filteredProducts.map((character) => <Link key={character.id} href={`products/${character.id}`}><ProductItem character={character} /></Link>)}
+        {filteredProducts.map((character) => <Link key={character.id} href={`products/${character.id}`} className='flex'><ProductItem character={character} /></Link>)}
       </ul>
     </>
   )

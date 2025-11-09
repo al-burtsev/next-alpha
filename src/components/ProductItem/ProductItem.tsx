@@ -17,13 +17,13 @@ const ProductItem = ({ character }: ProductItemProps ) => {
     const description = textMock.slice(0, character.id * 100)
 
     return (
-        <li className='h-100 flex flex-col justify-between'>
+        <li className='flex flex-col justify-between'>
             <Image
-                width={270}
-                height={270}
+                width={300}
+                height={300}
                 src={character.image}
                 alt={character.name}
-                className='w-full h-full object-contain'
+                className='size-full object-contain'
                 loading="eager" />
             <div>
                 <div className='py-1 line-clamp-3'>
