@@ -1,16 +1,12 @@
-import { Character } from '@/src/interfaces';
+import { getData } from '@/public/api/api';
 import ProductDetailsClient from './ProductDetailsClient';
+import { Character } from '@/src/interfaces';
 
 export async function generateStaticParams() {
-  const state = localStorage.getItem('product-storage');
-
-  if (state) {
-    const { products } = JSON.parse(state)
-
-    return products.map((product : Character) => ({
-      id: product.id.toString(),
-    }));
-  }
+  const products = await getData('https://rickandmortyapi.com/api/character');
+  return products.map((product: Character) => ({
+    id: product.id.toString(),
+  }));
 }
 
 const ProductPage = async ({ params }: { params: { id: string } }) => {
